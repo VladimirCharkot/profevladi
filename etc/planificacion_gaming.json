@@ -1,0 +1,91 @@
+{
+  "dependencias" : {
+    "orientación" : ["+rudimentos"],
+    "rudimentos" : ["+ilustración", "+scratch"],
+    "ilustración" : ["+geometría", "+plástica", "+animación"],
+    "scratch" : ["+algoritmos", "+matemática"],
+    "videojuegos" : ["-ilustración", "-scratch"]
+  },
+  "grafo" : {
+    "orientación" : {"desde" : [], "hacia": ["rudimentos"]},
+    "rudimentos" : {"desde" : ["orientación"], "hacia": ["ilustración", "scratch"]},
+    "ilustración" : {"desde" : ["rudimentos"], "hacia": ["geometría", "plástica", "animación"]},
+    "scratch" : {"desde" : ["rudimentos"], "hacia": ["algoritmos", "matemática"]},
+    "geometría" : {"desde" : ["ilustración"], "hacia" : ["videojuegos"]},
+    "plástica" : {"desde" : ["ilustración"], "hacia" : ["videojuegos"]},
+    "animación" : {"desde" : ["ilustración"], "hacia" : ["videojuegos"]},
+    "algoritmos" : {"desde" : ["scratch"], "hacia" : ["videojuegos"]},
+    "matemática" : {"desde" : ["scratch"], "hacia" : ["videojuegos"]},
+    "videojuegos" : {"desde" : ["geometría", "plástica", "animación", "algoritmos", "matemática"], "hacia" : []}
+  },
+  "precisiones" : {
+    "orientación" : {
+      "descripción" : "Aptitudes de orientación básica",
+      "habilidades" : {
+        "árboles" : "La persona entiende la estructura de árbol. Sabe representarse una ubicación mediante una dirección. Entiende que esta es la estructura del filesystem (descontando los 'links')",
+        "usuarie-1" : "La persona puede abrir el browser y navegar a una dirección en la web. Le fueron comunicadas las partes de una url, y sabe al menos distinguir el dominio del resto. Sabe descargar imágenes y archivos, encontrarlos y reubicarlos."
+      }
+    },
+    "rudimentos" : {
+      "descripción" : "Lo mínimo a familiarizarse para aventurar intentos",
+      "habilidades" : {
+        "formatos": "La persona entiende que existen diversos formatos de archivo para diversos propósitos y que se operan con programas diferentes. Se habló algo sobre estándares y proveedores. Sabe determinar el formato de un archivo y exportar de algún programa en diferentes formatos, o usar un conversor.",
+        "googlear" : "La persona entiende que la barra de búsqueda no es un intérprete de castellano. Se le mencionó que en diversas lenguas los resultados son distintos, y que google no es el productor de los contenidos que se encuentran, sino que solo los indexa y ordena. Sabe distinguir ads. Sabe que un _sitio_ se comprende de _páginas_ y que a un dominio corresponde, por lo general, un solo sitio."
+      }
+    },
+    "ilustración" : {
+      "descripción" : "Generalidades sobre la ilustración digital",
+      "habilidades" : {
+        "imagen-digital" : "La persona distingue raster de vectorial, y se le mencionaron los formatos existentes. Sabe importar una imagen en algún servicio web como pixlr o vectr. Sabe editar nodos y conoce los sistemas de color HSV y RGB."
+      }
+    },
+    "scratch" : {
+      "descripción" : "",
+      "habilidades" : {
+        "bloques" : "La persona entiende cómo relacionarse con los bloques (arrastrarlos, ensamblarlos, activarlos, etc). La persona se familiarizó con los bloques de movimiento.",
+        "disfraces" : "La persona está familiarizada con la interfaz de disfraces de scratch"
+      }
+    },
+    "geometría" : {
+      "descripción" : "",
+      "habilidades" : {
+        "perspectiva" : "La persona entiende que los objetos más alejados se ven más pequeños, y que las paralelas se acercan entre sí hacia el horizonte.",
+        "cartesiana" : "La persona entiende el sistema de coordenadas cartesiano (x,y)",
+        "angulos" : "La persona entiende que un círculo tiene 360 grados y está familiarizada con sus cocientes enteros."
+      }
+    },
+    "plástica" : {
+      "descripción" : "",
+      "habilidades" : {
+        "paletas" : "La persona sabe copiar paletas de colores y se le mencionó el código hexadecimal.",
+        "luz" : "La persona entiende que puede dar sensación de profundidad con fronteras de matices más claros y más oscuros del mismo color."
+      }
+    },
+    "animación" : {
+      "descripción" : "",
+      "habilidades" : {
+        "cuadros" : "La persona entiende que una animación está formada por cuadros que se reproducen uno detrás de otros, y que son reutilizables.",
+        "piskelapp" : "La persona sabe importar y exporar gifs de piskelapp."
+      }
+    },
+    "algoritmos" : {
+      "descripción" : "",
+      "habilidades" : {
+        "control" : "La persona tiene noción de lo que es un evento y un hilo de ejecución. Entiende como se usan las estructuras de control básicas (if, for, while, forever)."
+      }
+    },
+    "matemática" : {
+      "descripción" : "",
+      "habilidades" : {
+        "expresiones" : "La persona entiende que ahí donde hay un valor de un tipo, pudiera reemplazarse con una expresión que resuelva a ese tipo. Notación arbórea. Notación triangular.",
+        "enteros" : "La persona entiende la simetría de positivo y negativo respecto al cero."
+      }
+    },
+    "videojuegos" : {
+      "descripción" : "",
+      "habilidades" : {
+        "escalabilidad" : "La persona conoce patrones de código que permiten que el proyecto crezca."
+      }
+    }
+  }
+}
