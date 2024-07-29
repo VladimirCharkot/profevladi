@@ -7,9 +7,11 @@ def draw():
     global x
     x += 5
     
-    background(200)
+    b = 255 * (mouseX / 400.0)
+    
+    background(200, 100, b)
     
     if x > 400: 
         x = 0
         
-    circle(x, 200, 50)
+    circle(mouseY, x, 50)

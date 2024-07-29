@@ -6,8 +6,8 @@ def draw():
     background(200)
     t = millis() / 20
 
-    x = noise(float(t)/40) * width
-    y = noise(float(t)/40 + 56539) * height
+    x = noise(float(t)/80) * width
+    y = noise(float(t)/80 + 56539) * height
 
     c = t % 256 if t % 512 < 256 else 255 - t % 256
     

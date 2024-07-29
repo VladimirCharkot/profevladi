@@ -44,7 +44,7 @@ def limites():
     if x < -50:
         x = 640
 
-pyglet.clock.schedule_interval(lambda t: t, 1/60.0)
+pyglet.clock.schedule_interval(lambda t: print(t), 1/60.0)
 
 
 x, y = 10, 10

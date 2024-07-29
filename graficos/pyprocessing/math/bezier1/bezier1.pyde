@@ -23,8 +23,8 @@ p0 = (100, 100)
 p1 = (300, 300)
 p2 = (100, 500)
 
-t0 = 2
-dt = 1000 * 1.
+t0 = 0
+dt = 10000 * 1.
 
 def draw():
     global x, y, pos
@@ -47,7 +47,7 @@ def draw():
         
     x, y = pos
 
-    circle(x, y, 50)
+    circle(x, y, 10)
 
     if debug:
         text("x, y: {:.3f}, {:.3f}".format(x, y), 20, 20)

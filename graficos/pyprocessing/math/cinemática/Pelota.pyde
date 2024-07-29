@@ -74,4 +74,3 @@ def draw():
     p1.dibujar()
     p2.update()
     p2.dibujar()
-    

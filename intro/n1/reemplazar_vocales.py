@@ -1,12 +1,12 @@
 n = 0
 
-texto = 'Hola como tas'
+texto = input('Ingresá una frase > ')
 texto_nuevo = ''
 
 while n < len(texto):
     letra = texto[n]
     if letra in 'aeiou':
-        texto_nuevo = texto_nuevo + 'a'
+        texto_nuevo = texto_nuevo + 'i'
     else:
         texto_nuevo = texto_nuevo + letra
     n = n + 1

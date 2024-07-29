@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 pj1_hp = 120
 pj1_atk_1 = 4
@@ -16,9 +17,16 @@ while pj1_hp > 0 and pj2_hp > 0:
     pj1_hp -= dmg_2
     pj2_hp -= dmg_1
 
+    if pj1_hp < 0:
+        pj1_hp = 0
+
+    if pj2_hp < 0:
+        pj2_hp = 0
+
     print(f'{pj1_nombre}: {pj1_hp}HP')
     print(f'{pj2_nombre}: {pj2_hp}HP')
     print()
+    sleep(0.1)
 
 if pj1_hp > 0:
     print(f'Ganó {pj1_nombre}')

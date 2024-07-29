@@ -87,15 +87,15 @@ isla1 = [[0,0], [200,-20], [160,-200], [20,-160]]   # Lista de puntos
 isla2 = [[-200,200], [100,100], [-100, 50]]         # Cada punto es una lista
 isla3 = [[-180,-160], [-40,-50], [-50, -200]]       # de dos elementos [x,y]
 
-##fillcolor('SpringGreen4')   # Color de relleno
-##pencolor('#874f24')         # Color de trazo
+fillcolor('SpringGreen4')   # Color de relleno
+pencolor('#874f24')         # Color de trazo
 
 
 # Comentá lo siguiente si querés probar
 # otras cosas usando estas funciones
-##continente(isla1)
-##continente(isla2)
-##continente(isla3)
+continente(isla1)
+continente(isla2)
+continente(isla3)
 ##
 ### Esto dibuja un río solo:
 bgcolor('SpringGreen4')

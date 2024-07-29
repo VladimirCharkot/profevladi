@@ -1,6 +1,4 @@
-frase = input('Ingresá una frase')
-
-# Clase 4 - Hola for
+frase = input('Ingresá una frase > ')
 
 nueva = ''
 for letra in frase:
@@ -8,3 +6,5 @@ for letra in frase:
         nueva += 'i'
     else:
         nueva += letra
+
+print(nueva)

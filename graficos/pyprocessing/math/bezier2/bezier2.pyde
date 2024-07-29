@@ -1,4 +1,4 @@
-debug = False
+debug = True
 
 def setup():
     size(600,600)
@@ -10,6 +10,9 @@ def plerp(punto0, punto1, p):
 
 def pline(p1, p2):
     line(p1[0], p1[1], p2[0], p2[1])
+    
+def pcircle(p1):
+    circle(p1[0], p1[1], 5)
 
 def filtro(x):
     return -(cos(PI * x) - 1) / 2
@@ -49,6 +52,11 @@ def draw():
         pii2 = plerp(pi2, pi3, nt)
         pos = plerp(pii1, pii2, nt)
         if debug:
+            pcircle(pi1)
+            pcircle(pi2)
+            pcircle(pi3)
+            pcircle(pii1)
+            pcircle(pii2)
             pline(pi1, pi2)
             pline(pi2, pi3)
             pline(pi1, pi2)

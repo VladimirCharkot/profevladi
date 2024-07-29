@@ -5,9 +5,6 @@ from random import choices
 simbolos = '0123456789'
 digitos = 4
 
-# clave = []
-# for __ in range(4):
-#     clave += random.choice(simbolos)
 
 def lista_a_string(lis):
     s = ''
